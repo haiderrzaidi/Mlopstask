@@ -3,7 +3,7 @@ name: Docker Build and Push
 on:
   push:
     branches:
-      - main # Replace with your desired branch
+      - main 
 
 jobs:
   build:
@@ -25,5 +25,3 @@ jobs:
 
       - name: Build Docker image
         run: docker buildx build -t zaidijee/irisml --push .
-
-      # You can add additional steps here if needed.
